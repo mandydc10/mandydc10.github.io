@@ -1,0 +1,230 @@
+/* * {
+    border: 1px solid blue;
+} */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+    font-size: 18px;
+    color: #203A51;
+}
+
+main {
+    display: inline-flex;
+    width: 100%;
+}
+
+h1, h2 {
+    /* text-align: center; */
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+/* ----- Header ----- */
+header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+nav {
+    /* border: 1px solid green; */
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #203A51;
+}
+
+nav a:hover {
+    color:rgba(188, 94, 168, .65);
+    text-decoration: underline;
+}
+
+#logo-image {
+    align-self: baseline;
+    /* height: 150px; */
+    width: 250px;
+    object-fit: cover;
+}
+
+.right-header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.right-header>* {
+    /* width: 100%; */
+}
+
+.search {
+
+}
+
+#search-icon {
+    height: 18px;
+    margin-right: 10px;
+}
+
+.search-button {
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.search-button:hover {
+    cursor: pointer;
+}
+
+#search-field {
+    width:150px;
+    border-style: none;
+    border-bottom-style: groove;
+    border-color: rgba(217, 217, 217, .5);
+}
+
+#search-field:focus {
+    outline-style: none;
+    transition: ease-in-out, width .8s ease-in-out;
+}
+
+/* ---- Main Body Home page ----- */
+.title {
+    /* width: 100%; */
+    text-align: center;
+    font-size: 3em;
+    height: 2em;
+    color: white;
+    background-color: #8e83d4;
+    background-image: linear-gradient(43deg, #8e83d4 0%, #bc5ea8 46%, #de93b5 100%);
+    border-radius: 7px;
+    padding-top: 8s0px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.bio-column {
+    flex-basis: 55%;
+    display: inline-flex;
+    padding: 20px;
+}
+
+.side-bar {
+    flex-basis: 45%;
+    /* min-width: 300px; */
+    padding: 20px;
+    background-color: #8E83D4;
+    /* rgba(40, 59, 146, .78); */
+    color: #FFFFFF;
+    border-radius: 7px;
+    margin-top: -35px;
+    margin-right: -20px;
+}
+
+.project-name {
+    text-align: center;
+}
+
+.project-description {
+    text-align: center;
+}
+
+.image-skills, .bio-container {
+    flex-direction: column;
+}
+
+.bio-container {
+    flex-direction: column;
+}
+
+#profile-pic {
+    height: 350px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+
+#bio {
+    margin-left: 80px;
+    min-width: 400px;
+}
+
+/* ----- footer ----- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(217, 217, 217, .5);
+    margin-bottom: 10px;
+
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.socials img {
+    margin: 10px;
+    height: 20px;
+}
+
+/* ------- Main Body Contact Me page ------- */
+#contact-form {
+    max-width: 700px;
+    margin: 20px auto;
+    border: 1px solid rgba(217, 217, 217, .5);
+    box-shadow: 1px 1px 40px 0 rgba(217, 217, 217, .3);
+    border-radius: 7px;
+}
+
+.form-item {
+    margin: 30px 40px;
+}
+
+#contact-form input[type=text]:focus, #contact-form input[type=email]:focus, #contact-form textarea:focus {
+    outline-color:rgba(188, 94, 168, .8);
+}
+
+#contact-form input::placeholder, #contact-form textarea::placeholder  {
+    color:rgba(32, 58, 81, .4);
+    font-style: italic;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+#form-submit {
+    width: calc(100% / 1 - 10px);
+    border: none;
+    background-color:#BC5EA8;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 20px auto;
+    width: 60%;
+    border: 1px solid rgba(217, 217, 217, .5);
+    box-shadow: 3px 3px 3px 0 rgba(217, 217, 217, .5);
+    border-radius: 30px;
+}
+
+.form-item input, .form-item textarea {
+    /* margin-left: 10px; */
+    width: 100%;
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 4px;
+    line-height: 2.5rem;
+}
+
+@media (max-width: 600px) {
+
+}
