@@ -166,7 +166,7 @@ a {
 }
 
 #home-project-column {
-    flex-basis: fit-content;
+    
 }
 
 #project-image {
@@ -215,12 +215,19 @@ a {
     margin: 30px 40px;
 }
 
+.form-item input, .form-item textarea {
+    width: calc(100% - 23px);
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 4px;
+    line-height: 2.5rem;
+}
+
 #contact-form input[type=text], #contact-form input[type=email], #contact-form textarea {
     padding-left: 20px;
 }
 
 #contact-form input[type=text]:focus, #contact-form input[type=email]:focus, #contact-form textarea:focus {
-    outline-color:rgba(188, 94, 168, .8);
+    outline-color:var(--mid-color)
 }
 
 #contact-form input::placeholder, #contact-form textarea::placeholder  {
@@ -245,12 +252,12 @@ a {
     border-radius: 30px;
 }
 
-.form-item input, .form-item textarea {
-    width: calc(100% - 23px);
-    border: 1px solid rgba(217, 217, 217, 1);
-    border-radius: 4px;
-    line-height: 2.5rem;
+#form-submit:hover {
+    background-color:rgba(var(--mid-color-values), 0.6);
+    color: white;
 }
+
+
 
 /*----- For Mobile Only ----- */
 @media (max-width: 599px) {
@@ -362,12 +369,13 @@ a {
     /*--- Home page --- */
     #home-about-column {
         display: flex;
-
+        width: 100%;
     }
 
     #column-container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     #home-about-column {
@@ -375,12 +383,11 @@ a {
     }
 
     #home-contact-column {
-        width: 40%;
+        width: calc(100% / 2.5);
     }
 
     #home-project-column {
-        width: 60%;
-        flex-basis: fit-content;
+        width: calc(100% / 2.5);
     }
 
     #profile-pic {
@@ -415,8 +422,12 @@ a {
     }
 
     /*--- Home page --- */
-    #home-about-column {
-        width: 100%;
+    #home-contact-column {
+        width: calc(100% / 2.3);
+    }
+
+    #home-project-column {
+        width: calc(100% / 2.3);
     }
 
     /*--- Projects page --- */
