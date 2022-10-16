@@ -4,48 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Amanda Cook</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="index.html" class="home-link"><img id="logo-image" src="images/mylogo3.png" alt=""></a>
+            <a href="index.html" class="home-link"><img id="logo-image" src="images/my-logo.png" alt="logo"></a>
         </div>
         <div class="right-header">
-            <form class="search">
-                <input id="search-field" type="text" autocomplete="off">
-                <button type="submit" class="search-button"><img id="search-icon" src="images/search.png" alt="search-icon"></button>
-            </form>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="">About Me</a>
-                <a href="">Projects</a>
+            <nav id="mySidemenu" class="sidemenu">
+                <a href="javascript:void(0)" id="closebtn" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="projects.html">Projects</a>
                 <a href="contact-me.html">Contact Me</a>
+                <span id="icon" class="icon" onclick="openNav()">Menu</i></span>
             </nav>
         </div>
     </header>
-
-    <h1 class="title">Contact Me</h1>
-    <form id="contact-form" action="https://formspree.io/f/mbjbkrke" method="post">
-        <div class="form-item">
-            <label for="name" class="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="e.g. Jane Smith">
-        </div>
-        <div class="form-item">
-            <label for="email" class="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@email.com">
-        </div>
-        <div class="form-item">
-            <label for="message" class="message">Message</label>
-            <textarea id="message" name="message" placeholder="Your message here.."></textarea>
-        </div>
-        <div class="form-item">
-            <button id="form-submit" type="submit">Send</button>
-        </div>
-    </form>
-    <main>
-
+    <div class="title">
+        <h1>Contact Me</h1>
+    </div>
+    <main class="contact-me-page">
+        <form id="contact-form" action="https://formspree.io/f/mbjbkrke" method="post">
+            <div class="form-item">
+                <label for="name" class="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Jane Smith">
+            </div>
+            <div class="form-item">
+                <label for="email" class="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com">
+            </div>
+            <div class="form-item">
+                <label for="message" class="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message here.."></textarea>
+            </div>
+            <div class="form-item form-button">
+                <button id="form-submit" type="submit">Send</button>
+            </div>
+        </form>
     </main>
     <footer>
         <div class="socials">
@@ -54,5 +53,6 @@
         </div>
         <p class="copyright">&#169; Amanda Cook 2022</p>
     </footer>
+    <script src="apps.js"></script>
 </body>
 </html>
