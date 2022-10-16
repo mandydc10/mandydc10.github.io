@@ -1,4 +1,3 @@
-/* Set the width of the side navigation to 250px */
 const navToggle = document.querySelector('.mobile-nav-toggle');
 const primaryNav = document.querySelector('.primary-navigation');
 
